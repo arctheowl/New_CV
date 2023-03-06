@@ -3,7 +3,9 @@ import Head from "next/head";
 import { useState } from "react";
 import About from "~/components/About";
 import ClickArrow from "~/components/ClickArrow";
+import Education from "~/components/Education";
 import Experience from "~/components/Experience";
+import Projects from "~/components/Projects";
 import Laptop from "../components/Laptop";
 
 const Home: NextPage = () => {
@@ -23,6 +25,8 @@ const Home: NextPage = () => {
           <>
             <About />
             <Experience />
+            <Education />
+            <Projects />
           </>
         ) : null}
       </div>

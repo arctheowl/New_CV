@@ -1,6 +1,6 @@
-const Experience = () => {
+const Projects = () => {
   return (
-    <div className=" bg-[#2e026d] text-white">
+    <div className=" bg-[#2e026d] text-white" id="about">
       <div className="mx-auto flex w-1/2 flex-col">
         <h1 className="text-4xl font-bold text-white">About Me</h1>
 
@@ -58,4 +58,4 @@ const ServiceCard = ({ index, title, icon }: any) => (
   </div>
 );
 
-export default Experience;
+export default Projects;
