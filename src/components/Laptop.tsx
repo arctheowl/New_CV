@@ -1,10 +1,9 @@
 /* eslint-disable */
 import * as THREE from "three";
-import { Suspense, useRef, useState } from "react";
+import { Dispatch, SetStateAction, Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, useGLTF, ContactShadows } from "@react-three/drei";
 import { a as three, useSpring } from "@react-spring/three";
-import { BsArrowDown } from "react-icons/bs";
 
 function Model({ open, hinge, ...props }: any) {
   const { nodes, materials }: any = useGLTF("/mac-draco.glb");
@@ -87,26 +86,17 @@ function Model({ open, hinge, ...props }: any) {
   );
 }
 
-export default function Laptop() {
-  const [open, setOpen] = useState(false);
+export default function Laptop({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}) {
   const props = useSpring({ open: Number(open) });
 
   return (
-    <div
-      className={` flex h-full w-full flex-col bg-white ${
-        open ? "bg-gradient-to-b from-[#2e026d] to-[#15162c]" : "bg-white"
-      }`}
-    >
-      <h1
-        className={` mx-auto p-10 text-4xl font-bold ${
-          open ? "text-white" : "text-black"
-        }`}
-      >
-        Welcome to T3!
-      </h1>
-      {/* <BsArrowDown
-        className={`mx-auto h-24 w-24 ${open ? "text-white" : "text-black"}`}
-      /> */}
+    <div className={`flex h-full w-full flex-col`}>
       <Canvas dpr={[0, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <Suspense fallback={null}>
           <group
@@ -125,6 +115,17 @@ export default function Laptop() {
           far={4.5}
         />
       </Canvas>
+      <div
+        className={`xs:bottom-10 absolute bottom-32 flex w-full items-center justify-center ${
+          open ? " " : "invisible"
+        }`}
+      >
+        <a href="#about">
+          <div className="border-secondary flex h-10 w-5 items-start justify-center rounded-3xl border-4 p-2">
+            <div className="mt-2 h-4/5 w-full animate-personalBounce rounded-full bg-white p-2" />
+          </div>
+        </a>
+      </div>
     </div>
   );
 }

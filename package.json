@@ -14,10 +14,12 @@
     "@react-spring/web": "^9.7.1",
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.7",
+    "framer-motion": "^10.1.0",
     "next": "^13.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-tilt": "^0.1.4",
     "three": "^0.150.1",
     "zod": "^3.20.6"
   },
