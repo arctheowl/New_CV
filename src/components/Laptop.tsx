@@ -96,7 +96,9 @@ export default function Laptop({
   const props = useSpring({ open: Number(open) });
 
   return (
-    <div className={`flex h-full w-full flex-col`}>
+    <div
+      className={`mx-auto my-auto flex h-1/2  flex-col md:mx-0 md:h-full md:w-full`}
+    >
       <Canvas dpr={[0, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <Suspense fallback={null}>
           <group
@@ -120,7 +122,7 @@ export default function Laptop({
           open ? " " : "invisible"
         }`}
       >
-        <a href="#about">
+        <a href="#about" className=" invisible md:visible">
           <div className="border-secondary flex h-10 w-5 items-start justify-center rounded-3xl border-4 p-2">
             <div className="mt-2 h-4/5 w-full animate-personalBounce rounded-full bg-white p-2" />
           </div>
