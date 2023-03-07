@@ -11,7 +11,7 @@ const About = () => {
           create efficient, scalable, and user-friendly solutions that solve
           real-world problems. Let's work together to bring your ideas to life!
         </p>
-        <div className="flex">
+        <div className="flex gap-5">
           {ServiceCardList.map((service) => (
             <ServiceCard
               key={service.index}
@@ -52,8 +52,6 @@ const ServiceCardList = [
 
 const ServiceCard = ({ index, title, icon }: any) => (
   <div className="bg-tertiary flex flex-col items-center justify-evenly rounded-[20px] border-2 py-5 px-12">
-    <img src={icon} alt={title} className="h-16 w-16 object-contain" />
-
     <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
   </div>
 );

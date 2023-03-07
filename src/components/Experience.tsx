@@ -1,8 +1,10 @@
+import data from "./data/cvData.json";
+
 const Experience = () => {
   return (
     <div className=" bg-[#2e026d] text-white">
-      <div className="mx-auto flex w-1/2 flex-col">
-        <h1 className="text-4xl font-bold text-white">About Me</h1>
+      <div className="mx-24 flex flex-col">
+        <h1 className="text-4xl font-bold text-white">Experience</h1>
 
         <p>
           I'm a skilled software developer with experience in TypeScript and
@@ -12,11 +14,14 @@ const Experience = () => {
           real-world problems. Let's work together to bring your ideas to life!
         </p>
         <div className="flex">
-          {ServiceCardList.map((service) => (
-            <ServiceCard
-              key={service.index}
-              title={service.title}
-              icon={service.icon}
+          {data.experience.map((exp) => (
+            <ExperienceCard
+              key={exp.time}
+              title={exp.title}
+              desc={exp.description}
+              time={exp.time}
+              achievements={exp.achievements}
+              location={exp.location}
             />
           ))}
         </div>
@@ -25,36 +30,30 @@ const Experience = () => {
   );
 };
 
-const ServiceCardList = [
-  {
-    index: 1,
-    title: "Web Development",
-    icon: "/images/web-development.svg",
-  },
-  {
-    index: 2,
-    title: "Mobile Development",
-    icon: "/images/mobile-development.svg",
-  },
-  {
-    index: 3,
-    title: "UI/UX Design",
-    icon: "/images/ui-ux-design.svg",
-  },
-  {
-    index: 4,
-
-    title: "Digital Marketing",
-
-    icon: "/images/digital-marketing.svg",
-  },
-];
-
-const ServiceCard = ({ index, title, icon }: any) => (
+const ExperienceCard = ({
+  title,
+  link,
+  desc,
+  achievements,
+  time,
+  location,
+}: any) => (
   <div className="bg-tertiary flex flex-col items-center justify-evenly rounded-[20px] border-2 py-5 px-12">
-    <img src={icon} alt={title} className="h-16 w-16 object-contain" />
-
     <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
+    <h3 className="text-center text-[20px] font-bold text-white">{desc}</h3>
+    <h3 className="text-center text-[20px] font-bold text-white">{link}</h3>
+
+    {achievements.map((achievement: string) => {
+      <h3
+        key={achievement}
+        className="text-center text-[20px] font-bold text-white"
+      >
+        {achievement}
+      </h3>;
+    })}
+
+    <h3 className="text-center text-[20px] font-bold text-white">{time}</h3>
+    <h3 className="text-center text-[20px] font-bold text-white">{location}</h3>
   </div>
 );
 

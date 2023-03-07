@@ -1,8 +1,10 @@
+import data from "./data/cvData.json";
+
 const Education = () => {
   return (
     <div className=" bg-[#2e026d] text-white" id="about">
-      <div className="mx-auto flex w-1/2 flex-col">
-        <h1 className="text-4xl font-bold text-white">About Me</h1>
+      <div className="mx-24 flex flex-col">
+        <h1 className="text-4xl font-bold text-white">Education</h1>
 
         <p>
           I'm a skilled software developer with experience in TypeScript and
@@ -12,11 +14,14 @@ const Education = () => {
           real-world problems. Let's work together to bring your ideas to life!
         </p>
         <div className="flex">
-          {ServiceCardList.map((service) => (
-            <ServiceCard
-              key={service.index}
-              title={service.title}
-              icon={service.icon}
+          {data.education.map((edu) => (
+            <EducationCard
+              key={edu.degree.title}
+              title={edu.degree.title}
+              desc={edu.degree.description}
+              time={edu.degree.time}
+              modules={edu.degree.modules}
+              location={edu.degree.university}
             />
           ))}
         </div>
@@ -25,36 +30,50 @@ const Education = () => {
   );
 };
 
-const ServiceCardList = [
-  {
-    index: 1,
-    title: "Web Development",
-    icon: "/images/web-development.svg",
-  },
-  {
-    index: 2,
-    title: "Mobile Development",
-    icon: "/images/mobile-development.svg",
-  },
-  {
-    index: 3,
-    title: "UI/UX Design",
-    icon: "/images/ui-ux-design.svg",
-  },
-  {
-    index: 4,
+interface EducationCardProps {
+  title: string;
+  desc: string;
+  time: string;
+  modules: { name: string; description: string }[];
+  location: string;
+}
 
-    title: "Digital Marketing",
+const EducationCard = ({
+  title,
+  desc,
+  time,
+  location,
+  modules,
+}: EducationCardProps) => (
+  <>
+    <div className="bg-tertiary flex flex-col items-center justify-evenly rounded-[20px] border-2 py-5 px-12">
+      <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
+      <h3 className="text-center text-[20px] font-bold text-white">{desc}</h3>
+      <ModulesSection modules={modules} />
+      <h3 className="text-center text-[20px] font-bold text-white">{time}</h3>
+      <h3 className="text-center text-[20px] font-bold text-white">
+        {location}
+      </h3>
+    </div>
+  </>
+);
 
-    icon: "/images/digital-marketing.svg",
-  },
-];
-
-const ServiceCard = ({ index, title, icon }: any) => (
-  <div className="bg-tertiary flex flex-col items-center justify-evenly rounded-[20px] border-2 py-5 px-12">
-    <img src={icon} alt={title} className="h-16 w-16 object-contain" />
-
-    <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
+const ModulesSection = ({
+  modules,
+}: {
+  modules: { name: string; description: string }[];
+}) => (
+  <div className="flex flex-col">
+    {modules.map((module) => (
+      <div className="flex flex-col" key={module.name}>
+        <h3 className="text-center text-[20px] font-bold text-white">
+          {module.name}
+        </h3>
+        <h3 className="text-center text-[20px] font-bold text-white">
+          {module.description}
+        </h3>
+      </div>
+    ))}
   </div>
 );
 

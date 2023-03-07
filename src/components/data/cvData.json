@@ -1,0 +1,235 @@
+{
+  "title": "Liam's CV",
+  "profile_information": {
+    "name": "Liam Devlin",
+    "email": "lidevlin95@gmail.com",
+    "location": "Hampshire, WFH",
+    "role": "Software Engineer",
+    "phone": "07910060829",
+    "website": "cv.lidevlin.com",
+    "linkedin": "Liam-Devlin",
+    "github": "arctheowl",
+    "gitlab": "",
+    "goodreads": "127448795-liam",
+    "aboutMe": ""
+  },
+  "education": [
+    {
+      "degree": {
+        "title": "BSc Digital & Technology Solutions",
+        "university": "University of Roehampton",
+        "time": "2016-2020",
+        "description": "While working for Cisco as a Network consulting engineer I also studied for a degree that I was able to achieve in just over 3 years. This degree had some great modules that taught me so much about the topics I am passionate about. I've listed some of the more relevant modules of my degree below.",
+        "modules": [
+          {
+            "name": "Multi-Vendor Unix Systems",
+            "description": "This module of the degree was a great deep dive into Unix Systems and how they work. I was tasked with displaying this knowledge in various ways such as setting up Ubuntu and CentOS servers, creating bash scripts, cron jobs and troubleshoot common issues with unix systems. After using Linux for this module I transitioned into using Linux as my main desktop OS."
+          },
+          {
+            "name": "AI & Machine Learning",
+            "description": "The purpose of this module is to combine theory with aspects of implementation, drawing on algorithmic computation, knowledge-based systems, data structures, machine learning, intelligent agents, propositional logic and uninformed search algorithms. Practical programming skills will also be required."
+          },
+          {
+            "name": "Network Design and Troubleshooting",
+            "description": "Network design is an iterative process, involving topological (connectedness, and continuity) design, network-synthesis, and network-realisation. Common network topologies include bus topology, star, and ring. Building on Level 4’s ‘Data Communications and Networking’, the network planning process in this module begins with the acquisition of external information, related to: forecasts of how the new network will operate; economic information concerning costs; and technical details of the network’s capabilities."
+          },
+          {
+            "name": "Big Data & Analytics",
+            "description": "The purpose of this module is to provide learners the skills needed to collect, manage and analyse very large data sets. Big data analytics is the process of examining (and mining) large data sets containing a variety of data types to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful business information. The analytical findings can lead to more effective marketing, new revenue opportunities, better customer service, and improved operational efficiency."
+          }
+        ]
+      }
+    }
+  ],
+  "experience": [
+    {
+      "title": "Full Stack Software Engineer",
+      "time": "October 2021 - Present",
+      "company": "IQVIA",
+      "location": "WFH",
+      "description": "Since late last year I have been working as a full stack software engineer within IQVIA. I have enjoyed my time working at IQVIA working on some really interesting projects. These have been focused within the medical field delivering well presented data that can be consumed easily by the users.",
+      "achievements": [
+        {
+          "achievement": "Working within an Agile Team"
+        },
+        {
+          "achievement": "Delivering products to international clients"
+        },
+        {
+          "achievement": "Working with a team of talented developers"
+        },
+        {
+          "achievement": "Learning Elastic Search"
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Software Engineer",
+      "time": "April 2021 - October 2021",
+      "company": "TT Electronics",
+      "location": "WFH",
+      "description": "In April of 2021 I was working as a Full Stack Software Engineer with TT Electronics. It was a great experience as it has allowed me to focus more on my front-end development skills, specifically ReactJS. My main project was to build a user web application that will be used to configure thousands of IOT Deviecs. While building this front-end application from scratch I was also responsible for ensuring that the backend API services were well built, fit for purpose and with high availability in mind.",
+      "achievements": [
+        {
+          "achievement": "Answering straight to key stakeholders"
+        },
+        {
+          "achievement": "First experience as a lead developer"
+        },
+        {
+          "achievement": "Blending Front-end and Back-end skills"
+        },
+        {
+          "achievement": "Improved Front-end Skills"
+        }
+      ]
+    },
+    {
+      "title": "Network Consulting Engineer",
+      "time": "2018 - 2020",
+      "company": "Cisco",
+      "location": "WFH",
+      "description": "For 3 years I have been employeed as a network consulting engineer within Cisco. In this role I have had the opportunity to work on many interesting projects and be part of a great team. While in this role I became a subject matter expert for the BCI platform that Cisco offers allowing me to work with many different customers in achieving a relevant dashboard that will be used daily to give them a better insight into their business critical elements.",
+      "achievements": [
+        {
+          "achievement": "Deploying code that I wrote on 19,000+ devices"
+        },
+        {
+          "achievement": "Becoming a subject matter expert for BCI within the UK"
+        },
+        {
+          "achievement": "Gaining experience with the public sector and financial institutions"
+        },
+        {
+          "achievement": "Achieving a 2:1 in my degree"
+        }
+      ]
+    },
+    {
+      "title": "Multi Functional Apprentice",
+      "time": "2015 - 2018",
+      "company": "Cisco",
+      "location": "Reading, UK",
+      "description": "The first positions I was able to secure out of education was an apprenticeship with Cisco systems. In this role I was able to transition to many areas of the business going from sales to engineering. This is were I grew a passion for engineering.",
+      "achievements": [
+        {
+          "achievement": "Achieving CCNA & CCNP"
+        },
+        {
+          "achievement": "Graduating the program"
+        },
+        {
+          "achievement": "Gaining experience throughout the business"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Execl Automation Server",
+      "description": "A simple Go server that you upload an excel file to and it will run an automation script on it. I used the excelize library to interact with the excel file. This project started for a simple need to automate a repetitive task but has lead to solving many other problems.",
+      "link": "https://excelautomationserver-production.up.railway.app/"
+    },
+    {
+      "title": "Census Server",
+      "description": "A simple graphql server in Go that will return census data for the requests. I was able to download this data from the government census website and then store the data in a postgres database. I then created a simple graphql server that will return the data in a nice format. This project was a great way to learn about graphql and how to use it in a Go server. ",
+      "link": "https://censusserver-production.up.railway.app/"
+    },
+    {
+      "title": "Book Club Website",
+      "description": "I've made a simple website for the bookclub I attend. It keeps track of all the books we've read so far with a short description. I plan on extending some simple functionality, maybe a search bar, tags for genres or specific pages for authors and books.",
+      "link": "https://www.fleetbookclub.com",
+      "index": 0
+    },
+    {
+      "title": "LoveIsland Tracker",
+      "description": "My partner watches Love Island at every chance so I made a tracker so that I could keep track of all contestants. I used the eCharts for most of the graphs, tailwindcss for styling and sheer boredom for data.",
+      "link": "https://love-island.vercel.app/",
+      "index": 1
+    }
+  ],
+  "skills": [
+    {
+      "name": "Typescript",
+      "level": 90,
+      "area": "Frontend",
+      "experience": "While developing with ReactJs I soon transitioned to using Typescript as a consistent measure in readucing errors without adding much development time. I have thoroughly enjoyed using Typescript and seeing the benefits I would continue to use this whenever possible. Even though I have only been using it for the past year I feel comfortable with this technology."
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 90,
+      "area": "Frontend",
+      "experience": "I have been utilising Tailwind CSS Framework for the past year to ensure good responsive design practices are followed while maintaining clean readable code. It can often be beneficial to have all CSS in line so that when you are working on a component all information can be found in one place instead of hunting around multiple files."
+    },
+    {
+      "name": "Git",
+      "level": 90,
+      "area": "Tools",
+      "experience": "With any programming projects I participate in or create Git is always involved as a form of version control. I have experience with both Github and Gitlab."
+    },
+    {
+      "name": "Golang",
+      "level": 80,
+      "area": "Backend",
+      "experience": "3 Years working with Go in professional development environment. My current role includes developing a resilient backend for configuring devices and reporting sensor data to customers. This system has utilised many key areas like API's, GraphQL etc."
+    },
+    {
+      "name": "React",
+      "level": 80,
+      "area": "Frontend",
+      "experience": "Since deciding to develop within ReactJs I have really enjoyed the simplicity of creating components and hooks to give functionality and structure to a webapp. While I am not a designer I am very confident in being able to recreate a design I have been given withint React."
+    },
+    {
+      "name": "Javascript",
+      "level": 70,
+      "area": "Frontend",
+      "experience": "Since joining TT Electronics in April 2021 I have been working on the Frontend development of a webapp. As one of the lead developers I was responsible for deciding on a tech stack to develop on. I chose ReactJS with Typescript. In making this decision I studied and learned basic Javascript to give me the fundamentals to build and troubleshoot this stack."
+    },
+    {
+      "name": "Python",
+      "level": 60,
+      "area": "Backend",
+      "experience": "1.5 Years of working to develop scripts for customers networking solutions. This experience was the first transition I had into software development."
+    },
+    {
+      "name": "Linux",
+      "level": 65,
+      "area": "Backend",
+      "experience": "Since using Linux for my university module I have been daily driving some form of Linux distro. I am very comfortable in most terminals from Desktop,IOT to server."
+    },
+    {
+      "name": "Networking",
+      "level": 65,
+      "area": "Backend",
+      "experience": "I was a Cisco Network Engineer for 3 years, achieving a CCNP qualification and gaining extensive knowledge in networking systems. I am comfortable troubleshooting enterprise envrionments along the whole 7 Layers of the OSI Model."
+    },
+    {
+      "name": "CI/CD",
+      "level": 50,
+      "area": "Tools",
+      "experience": "As I use Git with all of my projects I will often ustilise many CI/CD tools to speed up the development process while maintaining a good code base. This includes using Github Actions on this CV to run a linter and simple tests before automatically deploying on a heroku instance."
+    }
+  ],
+  "Sections": [
+    {
+      "title": "Information",
+      "desc": "Find basic information about Liam, contact info etc"
+    },
+    {
+      "title": "Experience",
+      "desc": "Previous Job Roles and Experience with these Technologies"
+    },
+    {
+      "title": "Education",
+      "desc": "Read through some of my Educational achievements"
+    },
+    {
+      "title": "Skills",
+      "desc": "Have a look through some of the skills I have acquired"
+    },
+    {
+      "title": "Projects",
+      "desc": "Discover what projects I am currently working on"
+    }
+  ]
+}

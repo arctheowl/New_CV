@@ -122,7 +122,10 @@ export default function Laptop({
           open ? " " : "invisible"
         }`}
       >
-        <a href="#about" className=" invisible md:visible">
+        <a
+          href="#about"
+          className={`invisible md:visible ${open ? "" : "md:invisible"}`}
+        >
           <div className="border-secondary flex h-10 w-5 items-start justify-center rounded-3xl border-4 p-2">
             <div className="mt-2 h-4/5 w-full animate-personalBounce rounded-full bg-white p-2" />
           </div>
