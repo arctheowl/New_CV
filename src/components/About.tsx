@@ -1,20 +1,36 @@
+import { motion } from "framer-motion";
+import { SectionWrapper } from "~/hoc";
+import { fadeIn, textVariant } from "~/utils/motion";
+import Tilt from "react-tilt";
+// import styles from "~/styles/gloabls.css";
+import { styles } from "../styles";
+
 const About = () => {
   return (
-    <div className=" bg-[#2e026d] text-white" id="about">
-      <div className="mx-auto flex w-1/2 flex-col">
-        <h1 className="text-4xl font-bold text-white">About Me</h1>
+    <div
+      className=" bg-gradient-to-b from-[#050816] to-[#030714] p-20 text-white"
+      id="about"
+    >
+      <div className="flex flex-col">
+        <motion.div variants={textVariant(0.75)}>
+          <h1 className={styles.sectionHeadText}>About Me</h1>
+        </motion.div>
 
-        <p>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
+        >
           I'm a skilled software developer with experience in TypeScript and
           JavaScript, and expertise in frameworks like React, Node.js, and
           Three.js. I'm a quick learner and collaborate closely with clients to
           create efficient, scalable, and user-friendly solutions that solve
           real-world problems. Let's work together to bring your ideas to life!
-        </p>
-        <div className="flex gap-5">
-          {ServiceCardList.map((service) => (
+        </motion.p>
+        <div className="mt-20 flex flex-wrap gap-10">
+          {ServiceCardList.map((service, index) => (
             <ServiceCard
               key={service.index}
+              index={index}
               title={service.title}
               icon={service.icon}
             />
@@ -50,10 +66,19 @@ const ServiceCardList = [
   },
 ];
 
-const ServiceCard = ({ index, title, icon }: any) => (
-  <div className="bg-tertiary flex flex-col items-center justify-evenly rounded-[20px] border-2 py-5 px-12">
-    <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
-  </div>
+export const ServiceCard = ({ index, title, icon }: any) => (
+  <Tilt className="">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="green-pink-gradient shadow-card' w-full rounded-[20px] p-[1px]"
+    >
+      <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-[#030714] py-5 px-12">
+        <h3 className="text-center text-[20px] font-bold text-white">
+          {title}
+        </h3>
+      </div>
+    </motion.div>
+  </Tilt>
 );
 
-export default About;
+export default SectionWrapper(About, "About");

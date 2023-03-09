@@ -48,19 +48,13 @@
       "company": "IQVIA",
       "location": "WFH",
       "description": "Since late last year I have been working as a full stack software engineer within IQVIA. I have enjoyed my time working at IQVIA working on some really interesting projects. These have been focused within the medical field delivering well presented data that can be consumed easily by the users.",
+      "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F1732100.jpg&f=1&nofb=1&ipt=61ad2438da53ed67468d0631a533affb8ca83c38febd767322131913c55ee8fd&ipo=images",
+      "iconBg": "#383E56",
       "achievements": [
-        {
-          "achievement": "Working within an Agile Team"
-        },
-        {
-          "achievement": "Delivering products to international clients"
-        },
-        {
-          "achievement": "Working with a team of talented developers"
-        },
-        {
-          "achievement": "Learning Elastic Search"
-        }
+        "Working within an Agile Team",
+        "Delivering products to international clients",
+        "Working with a team of talented developers",
+        "Learning Elastic Search"
       ]
     },
     {
@@ -69,19 +63,12 @@
       "company": "TT Electronics",
       "location": "WFH",
       "description": "In April of 2021 I was working as a Full Stack Software Engineer with TT Electronics. It was a great experience as it has allowed me to focus more on my front-end development skills, specifically ReactJS. My main project was to build a user web application that will be used to configure thousands of IOT Deviecs. While building this front-end application from scratch I was also responsible for ensuring that the backend API services were well built, fit for purpose and with high availability in mind.",
+      "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.eletimes.com%2Fwp-content%2Fuploads%2F2019%2F12%2FTT-ELE.jpg&f=1&nofb=1&ipt=c54f62ffbdc3a9e83d87f13a78fd6e0dfbc73458fc09a15dbb84e2d36a9b15f5&ipo=images",
       "achievements": [
-        {
-          "achievement": "Answering straight to key stakeholders"
-        },
-        {
-          "achievement": "First experience as a lead developer"
-        },
-        {
-          "achievement": "Blending Front-end and Back-end skills"
-        },
-        {
-          "achievement": "Improved Front-end Skills"
-        }
+        "Answering straight to key stakeholders",
+        "First experience as a lead developer",
+        "Blending Front-end and Back-end skills",
+        "Improved Front-end Skills"
       ]
     },
     {
@@ -90,19 +77,13 @@
       "company": "Cisco",
       "location": "WFH",
       "description": "For 3 years I have been employeed as a network consulting engineer within Cisco. In this role I have had the opportunity to work on many interesting projects and be part of a great team. While in this role I became a subject matter expert for the BCI platform that Cisco offers allowing me to work with many different customers in achieving a relevant dashboard that will be used daily to give them a better insight into their business critical elements.",
+      "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freepnglogos.com%2Fuploads%2Fcisco-png-logo%2Fnew-cisco-logo-png-1.png&f=1&nofb=1&ipt=8f543cfa9d234f3cbb30d222706c006430275775fbbb2af0bcc937075ec1db25&ipo=images",
+      "iconBg": "white",
       "achievements": [
-        {
-          "achievement": "Deploying code that I wrote on 19,000+ devices"
-        },
-        {
-          "achievement": "Becoming a subject matter expert for BCI within the UK"
-        },
-        {
-          "achievement": "Gaining experience with the public sector and financial institutions"
-        },
-        {
-          "achievement": "Achieving a 2:1 in my degree"
-        }
+        "Deploying code that I wrote on 19,000+ devices",
+        "Becoming a subject matter expert for BCI within the UK",
+        "Gaining experience with the public sector and, financial institutions",
+        "Achieving a 2:1 in my degree"
       ]
     },
     {
@@ -111,16 +92,12 @@
       "company": "Cisco",
       "location": "Reading, UK",
       "description": "The first positions I was able to secure out of education was an apprenticeship with Cisco systems. In this role I was able to transition to many areas of the business going from sales to engineering. This is were I grew a passion for engineering.",
+      "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freepnglogos.com%2Fuploads%2Fcisco-png-logo%2Fnew-cisco-logo-png-1.png&f=1&nofb=1&ipt=8f543cfa9d234f3cbb30d222706c006430275775fbbb2af0bcc937075ec1db25&ipo=images",
+      "iconBg": "white",
       "achievements": [
-        {
-          "achievement": "Achieving CCNA & CCNP"
-        },
-        {
-          "achievement": "Graduating the program"
-        },
-        {
-          "achievement": "Gaining experience throughout the business"
-        }
+        "Achieving CCNA & CCNP",
+        "Graduating the program",
+        "Gaining experience throughout the business"
       ]
     }
   ],
@@ -128,24 +105,83 @@
     {
       "title": "Execl Automation Server",
       "description": "A simple Go server that you upload an excel file to and it will run an automation script on it. I used the excelize library to interact with the excel file. This project started for a simple need to automate a repetitive task but has lead to solving many other problems.",
-      "link": "https://excelautomationserver-production.up.railway.app/"
+      "link": "https://excelautomationserver-production.up.railway.app/",
+      "tags": [
+        {
+          "name": "react",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "mongodb",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "tailwind",
+          "color": "pink-text-gradient"
+        }
+      ]
     },
     {
       "title": "Census Server",
       "description": "A simple graphql server in Go that will return census data for the requests. I was able to download this data from the government census website and then store the data in a postgres database. I then created a simple graphql server that will return the data in a nice format. This project was a great way to learn about graphql and how to use it in a Go server. ",
-      "link": "https://censusserver-production.up.railway.app/"
+      "link": "https://censusserver-production.up.railway.app/",
+      "image": "/images/censusServer.png",
+      "tags": [
+        {
+          "name": "react",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "mongodb",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "tailwind",
+          "color": "pink-text-gradient"
+        }
+      ]
     },
     {
       "title": "Book Club Website",
       "description": "I've made a simple website for the bookclub I attend. It keeps track of all the books we've read so far with a short description. I plan on extending some simple functionality, maybe a search bar, tags for genres or specific pages for authors and books.",
       "link": "https://www.fleetbookclub.com",
-      "index": 0
+      "index": 0,
+      "image": "/images/Bookclub.png",
+      "tags": [
+        {
+          "name": "react",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "mongodb",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "tailwind",
+          "color": "pink-text-gradient"
+        }
+      ]
     },
     {
       "title": "LoveIsland Tracker",
       "description": "My partner watches Love Island at every chance so I made a tracker so that I could keep track of all contestants. I used the eCharts for most of the graphs, tailwindcss for styling and sheer boredom for data.",
       "link": "https://love-island.vercel.app/",
-      "index": 1
+      "index": 1,
+      "image": "/images/LITracker.png",
+      "tags": [
+        {
+          "name": "react",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "mongodb",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "tailwind",
+          "color": "pink-text-gradient"
+        }
+      ]
     }
   ],
   "skills": [

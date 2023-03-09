@@ -18,16 +18,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={`h-screen w-full ${open ? "bg-[#2e026d]" : "bg-white"}`}>
-        <ClickArrow open={open} />
-        <Laptop open={open} setOpen={setOpen} />
+      <div className={`h-screen w-full to-[#030714]`}>
+        <div
+          className={`-z-10 h-screen w-full ${
+            open
+              ? "bg-[url('/images/herobg.png')] bg-auto bg-center bg-no-repeat "
+              : "bg-white"
+          }`}
+        >
+          <ClickArrow open={open} />
+          <Laptop open={open} setOpen={setOpen} />
+        </div>
         {open ? (
-          <>
+          <div className="flex flex-col">
             <About />
             <Experience />
             <Education />
             <Projects />
-          </>
+          </div>
         ) : null}
       </div>
     </>

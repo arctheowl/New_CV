@@ -1,60 +1,85 @@
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+
+import "react-vertical-timeline-component/style.min.css";
+
+import { styles } from "../styles";
+// import { experiences } from "../constants";
 import data from "./data/cvData.json";
+import { SectionWrapper } from "../hoc";
+import { textVariant } from "../utils/motion";
 
-const Experience = () => {
+const ExperienceCard = ({ experience }: any) => {
   return (
-    <div className=" bg-[#2e026d] text-white">
-      <div className="mx-24 flex flex-col">
-        <h1 className="text-4xl font-bold text-white">Experience</h1>
-
-        <p>
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
-        </p>
-        <div className="flex">
-          {data.experience.map((exp) => (
-            <ExperienceCard
-              key={exp.time}
-              title={exp.title}
-              desc={exp.description}
-              time={exp.time}
-              achievements={exp.achievements}
-              location={exp.location}
-            />
-          ))}
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#1d1836",
+        color: "#fff",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      date={experience.time}
+      iconStyle={{ background: experience.iconBg }}
+      icon={
+        <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full">
+          <img
+            src={experience.icon}
+            alt={experience.company}
+            className="object-contain"
+          />
         </div>
+      }
+    >
+      <div>
+        <h3 className="text-[24px] font-bold text-white">{experience.title}</h3>
+        <p
+          className="text-secondary text-[16px] font-semibold"
+          style={{ margin: 0 }}
+        >
+          {experience.company}
+        </p>
       </div>
-    </div>
+
+      <ul className="mt-5 ml-5 list-disc space-y-2">
+        {experience.achievements.map((point: any, index: number) => (
+          <li
+            key={`experience-point-${index}`}
+            className="text-white-100 pl-1 text-[14px] tracking-wider"
+          >
+            {point}
+          </li>
+        ))}
+      </ul>
+    </VerticalTimelineElement>
   );
 };
 
-const ExperienceCard = ({
-  title,
-  link,
-  desc,
-  achievements,
-  time,
-  location,
-}: any) => (
-  <div className="bg-tertiary flex flex-col items-center justify-evenly rounded-[20px] border-2 py-5 px-12">
-    <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
-    <h3 className="text-center text-[20px] font-bold text-white">{desc}</h3>
-    <h3 className="text-center text-[20px] font-bold text-white">{link}</h3>
+const Experience = () => {
+  return (
+    <>
+      <motion.div variants={textVariant(1)}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          What I have done so far
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Work Experience.
+        </h2>
+      </motion.div>
 
-    {achievements.map((achievement: string) => {
-      <h3
-        key={achievement}
-        className="text-center text-[20px] font-bold text-white"
-      >
-        {achievement}
-      </h3>;
-    })}
+      <div className="mt-20 flex flex-col">
+        <VerticalTimeline>
+          {data.experience.map((experience: any, index: number) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </>
+  );
+};
 
-    <h3 className="text-center text-[20px] font-bold text-white">{time}</h3>
-    <h3 className="text-center text-[20px] font-bold text-white">{location}</h3>
-  </div>
-);
-
-export default Experience;
+export default SectionWrapper(Experience, "work");
