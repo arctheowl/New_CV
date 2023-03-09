@@ -5,7 +5,7 @@ import About from "~/components/About";
 import ClickArrow from "~/components/ClickArrow";
 import Experience from "~/components/Experience";
 import Projects from "~/components/Projects";
-import Tech from "~/components/NewTech/Tech";
+import Tech from "~/components/Tech";
 import Laptop from "../components/Laptop";
 
 const Home: NextPage = () => {
@@ -37,6 +37,9 @@ const Home: NextPage = () => {
         {open ? (
           <div className="flex flex-col">
             <About />
+            {/* <Suspense fallback={null}>
+              
+            </Suspense> */}
             <Tech />
             <Experience />
             <Projects />

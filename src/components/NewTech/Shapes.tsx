@@ -145,13 +145,13 @@ export function Sphere({ position, imgUrl }: SphereProps) {
     <motion.mesh position={position} variants={{ hover: { z: 2 } }} scale={0.5}>
       <sphereGeometry args={[0.4]} />
       <Material imgUrl={imgUrl} />
-      <Decal
+      {/* <Decal
         position={[0, 0, 1]}
         rotation={[2 * Math.PI, 0, 6.25]}
         scale={1}
         map={decal}
         flatShading
-      />
+      /> */}
     </motion.mesh>
   );
 }

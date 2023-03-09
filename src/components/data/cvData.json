@@ -20,11 +20,11 @@
     },
     {
       "name": "Golang",
-      "icon": "/images/assets/Golang.jpg"
+      "icon": "/images/assets/golang.png"
     },
     {
       "name": "Python",
-      "icon": "/images/assets/Python.jpg"
+      "icon": "/images/assets/python.png"
     },
     {
       "name": "Docker",
@@ -38,7 +38,7 @@
   "FrontendTech": [
     {
       "name": "ReactJS",
-      "icon": "/images/assets/reactjs.png",
+      "icon": "/images/assets/react.png",
       "position": [
         0,
         0,
@@ -47,7 +47,7 @@
     },
     {
       "name": "NextJS",
-      "icon": "/images/assets/Nextjs-logo.png",
+      "icon": "/images/assets/Nextjs.png",
       "position": [
         0,
         0,

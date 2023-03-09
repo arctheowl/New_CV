@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, link }: any) => {
+const TechCard = ({ index, name, icon, link }: any) => {
   return (
     <Tilt
       options={{
@@ -13,7 +13,7 @@ const ProjectCard = ({ index, name, description, tags, image, link }: any) => {
         scale: 1,
         speed: 450,
       }}
-      className="min-h-[280px] rounded-2xl p-5 sm:w-[360px] md:w-[25rem]"
+      className="w-[20rem] rounded-2xl p-5 "
     >
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -23,26 +23,14 @@ const ProjectCard = ({ index, name, description, tags, image, link }: any) => {
         <div className="flex h-full min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-[#030714] py-2 ">
           <div className="relative h-[230px] w-full">
             <img
-              src={image}
+              src={icon}
               alt="project_image"
-              className="h-full w-full rounded-2xl object-cover px-2"
+              className="h-full w-full rounded-2xl px-2"
             />
           </div>
 
           <div className="mt-2 px-12">
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag: any) => (
-              <p
-                key={`${name}-${tag.name}`}
-                className={`text-[14px] ${tag.color}`}
-              >
-                #{tag.name}
-              </p>
-            ))}
           </div>
         </div>
       </motion.div>
@@ -50,18 +38,20 @@ const ProjectCard = ({ index, name, description, tags, image, link }: any) => {
   );
 };
 
-const Works = () => {
+const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant(0.1)}>
-        <p className={`${styles.sectionSubText} text-center`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>What I Use</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          The Tech Stack
+        </h2>
       </motion.div>
 
       <div className="flex w-full text-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mx-auto mt-3 max-w-3xl text-center text-[17px] leading-[30px]"
+          className="text-secondary mx-auto mt-3 w-1/2 text-center text-[17px] leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -72,12 +62,15 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap justify-around">
-        {data.projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {data.FrontendTech.map((project, index) => (
+          <TechCard key={`project-${index}`} index={index} {...project} />
+        ))}
+        {data.BackendTech.map((project, index) => (
+          <TechCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Tech, "Tech");
