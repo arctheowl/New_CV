@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
       <div className={`h-screen w-screen to-[#030714]`}>
         <div
-          className={`md: -z-10 w-full ${
+          className={`mx-auto w-full md:-z-10 ${
             open
               ? "bg-[url('/images/herobg.png')] bg-auto bg-center bg-no-repeat "
               : "h-screen bg-white"
