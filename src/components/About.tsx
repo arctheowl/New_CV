@@ -7,18 +7,15 @@ import { styles } from "../styles";
 
 const About = () => {
   return (
-    <div
-      className=" bg-gradient-to-b from-[#050816] to-[#030714] p-20 text-white"
-      id="about"
-    >
-      <div className="flex flex-col">
-        <motion.div variants={textVariant(0.6)}>
+    <div className="p-20 text-white" id="about">
+      <div className="flex flex-col text-center">
+        <motion.div variants={textVariant(0.5)}>
           <h1 className={styles.sectionHeadText}>About Me</h1>
         </motion.div>
 
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
+          className="text-secondary mx-auto mt-4 max-w-3xl text-[17px] leading-[30px]"
         >
           I'm a skilled software developer with experience in TypeScript and
           JavaScript, and expertise in frameworks like React, Node.js, and
@@ -26,7 +23,7 @@ const About = () => {
           create efficient, scalable, and user-friendly solutions that solve
           real-world problems. Let's work together to bring your ideas to life!
         </motion.p>
-        <div className="mt-20 flex flex-wrap gap-10">
+        <div className="mx-auto mt-20 flex flex-wrap gap-10">
           {ServiceCardList.map((service, index) => (
             <ServiceCard
               key={service.index}

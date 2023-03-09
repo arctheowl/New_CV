@@ -10,7 +10,7 @@ const StarWrapper = (Component: any, idName: string) =>
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`relative z-0 ${styles.padding} bg-[#030714]`}
+        className={`relative z-0 ${styles.padding} bg-[#050816]`}
       >
         <Component />
       </motion.section>

@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col">
             <About />
             <Experience />
-            <Education />
+            {/* <Education /> */}
             <Projects />
           </div>
         ) : null}

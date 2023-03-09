@@ -57,14 +57,14 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant(0.5)}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>My work</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
       </motion.div>
 
-      <div className="flex w-full">
+      <div className="flex w-full text-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
+          className="text-secondary mx-auto mt-3 max-w-3xl text-center text-[17px] leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
