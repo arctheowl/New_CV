@@ -13,6 +13,75 @@
     "goodreads": "127448795-liam",
     "aboutMe": ""
   },
+  "BackendTech": [
+    {
+      "name": "Nodejs",
+      "icon": "/images/assets/nodejs.png"
+    },
+    {
+      "name": "Golang",
+      "icon": "/images/assets/Golang.jpg"
+    },
+    {
+      "name": "Python",
+      "icon": "/images/assets/Python.jpg"
+    },
+    {
+      "name": "Docker",
+      "icon": "/images/assets/docker.png"
+    },
+    {
+      "name": "Git",
+      "icon": "/images/assets/git.png"
+    }
+  ],
+  "FrontendTech": [
+    {
+      "name": "ReactJS",
+      "icon": "/images/assets/reactjs.png",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "NextJS",
+      "icon": "/images/assets/Nextjs-logo.png",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "/images/assets/tailwind.png",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "HTML",
+      "icon": "/images/assets/html.png",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "CSS",
+      "icon": "/images/assets/css.png",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
   "education": [
     {
       "degree": {

@@ -2,10 +2,21 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "~/hoc";
 import { fadeIn, textVariant } from "~/utils/motion";
 import Tilt from "react-tilt";
-// import styles from "~/styles/gloabls.css";
 import { styles } from "../styles";
 
 const About = () => {
+  const fontUrl = "/fonts/Roboto Medium_Regular.json";
+  const textOptions = {
+    size: 1,
+    height: 0.5,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.1,
+    bevelSize: 0.1,
+    bevelOffset: 0,
+    bevelSegments: 5,
+  };
+
   return (
     <div className="p-20 text-white" id="about">
       <div className="flex flex-col text-center">
@@ -17,13 +28,14 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="text-secondary mx-auto mt-4 max-w-3xl text-[17px] leading-[30px]"
         >
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I'm a skilled full stack software developer with experience in
+          TypeScript, Go, and Python. On the frontend I have sepecific expertise
+          in frameworks like Nextjs and Three.js. I'm a quick learner and
+          collaborate closely with clients to create efficient, scalable, and
+          user-friendly solutions that solve real-world problems. Let's work
+          together to bring your ideas to life!
         </motion.p>
-        <div className="mx-auto mt-20 flex flex-wrap gap-10">
+        {/* <div className="mx-auto mt-20 flex flex-wrap gap-10">
           {ServiceCardList.map((service, index) => (
             <ServiceCard
               key={service.index}
@@ -32,7 +44,7 @@ const About = () => {
               icon={service.icon}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

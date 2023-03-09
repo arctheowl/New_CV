@@ -3,9 +3,9 @@ import Head from "next/head";
 import { useState } from "react";
 import About from "~/components/About";
 import ClickArrow from "~/components/ClickArrow";
-import Education from "~/components/Education";
 import Experience from "~/components/Experience";
 import Projects from "~/components/Projects";
+import Tech from "~/components/NewTech/Tech";
 import Laptop from "../components/Laptop";
 
 const Home: NextPage = () => {
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <div className={`h-screen w-full to-[#030714]`}>
+      <div className={`h-screen w-screen to-[#030714]`}>
         <div
           className={`-z-10 h-screen w-full ${
             open
@@ -35,6 +35,7 @@ const Home: NextPage = () => {
         {open ? (
           <div className="flex flex-col">
             <About />
+            <Tech />
             <Experience />
             {/* <Education /> */}
             <Projects />
