@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <div
           className={`mx-auto w-full md:-z-10 ${
             open
-              ? "bg-[url('/images/herobg.png')] bg-auto bg-center bg-no-repeat "
+              ? "bg-[url('/images/herobg.png')] bg-cover bg-center bg-no-repeat"
               : "h-screen bg-white"
           }`}
         >
@@ -37,7 +37,6 @@ const Home: NextPage = () => {
             <About />
             <Tech />
             <Experience />
-            {/* <Education /> */}
             <Projects />
           </div>
         ) : null}

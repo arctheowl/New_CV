@@ -52,7 +52,7 @@ export default function NewTech({ title }: NewTechProps) {
         }}
       >
         <motion.div
-          className="shapes"
+          className="shapes max-w-screen"
           variants={{
             rest: { opacity: 0 },
             hover: { opacity: 1 },
