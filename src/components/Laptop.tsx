@@ -1,4 +1,3 @@
-/* eslint-disable */
 import * as THREE from "three";
 import { Dispatch, SetStateAction, Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
