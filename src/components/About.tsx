@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div className="px-2 pb-20 text-white" id="about">
       <div className="flex flex-col text-center">
-        <motion.div variants={textVariant(0.5)}>
+        <motion.div variants={textVariant(0.1)}>
           <h1 className={styles.sectionHeadText}>About Me</h1>
         </motion.div>
 
