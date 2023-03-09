@@ -23,10 +23,10 @@ const Home: NextPage = () => {
 
       <div className={`h-screen w-screen to-[#030714]`}>
         <div
-          className={`-z-10 h-screen w-full ${
+          className={`md: -z-10 w-full ${
             open
               ? "bg-[url('/images/herobg.png')] bg-auto bg-center bg-no-repeat "
-              : "bg-white"
+              : "h-screen bg-white"
           }`}
         >
           <ClickArrow open={open} />

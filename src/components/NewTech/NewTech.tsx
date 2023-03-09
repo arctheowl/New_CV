@@ -25,7 +25,7 @@ export default function NewTech({ title }: NewTechProps) {
   return (
     <MotionConfig transition={transition}>
       <motion.button
-        className="mx-auto w-1/6 rounded-full ring-2 ring-green-500 hover:text-gray-600"
+        className="mt-24 rounded-full ring-2 ring-green-500 hover:text-gray-600 md:mx-auto md:w-1/6"
         ref={ref}
         initial={false}
         animate={isHover ? "hover" : "rest"}
@@ -74,7 +74,7 @@ export default function NewTech({ title }: NewTechProps) {
         </motion.div>
         <motion.div
           variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
-          className="label "
+          className="md:label"
         >
           {title}
         </motion.div>
