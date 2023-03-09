@@ -12,7 +12,7 @@ const About = () => {
       id="about"
     >
       <div className="flex flex-col">
-        <motion.div variants={textVariant(0.75)}>
+        <motion.div variants={textVariant(0.6)}>
           <h1 className={styles.sectionHeadText}>About Me</h1>
         </motion.div>
 

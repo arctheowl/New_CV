@@ -106,17 +106,18 @@
       "title": "Execl Automation Server",
       "description": "A simple Go server that you upload an excel file to and it will run an automation script on it. I used the excelize library to interact with the excel file. This project started for a simple need to automate a repetitive task but has lead to solving many other problems.",
       "link": "https://excelautomationserver-production.up.railway.app/",
+      "image": "/images/ExcelServer.png",
       "tags": [
         {
-          "name": "react",
+          "name": "Go",
           "color": "blue-text-gradient"
         },
         {
-          "name": "mongodb",
+          "name": "Excelize",
           "color": "green-text-gradient"
         },
         {
-          "name": "tailwind",
+          "name": "Railway",
           "color": "pink-text-gradient"
         }
       ]
@@ -128,15 +129,15 @@
       "image": "/images/censusServer.png",
       "tags": [
         {
-          "name": "react",
+          "name": "Go",
           "color": "blue-text-gradient"
         },
         {
-          "name": "mongodb",
+          "name": "Postgres",
           "color": "green-text-gradient"
         },
         {
-          "name": "tailwind",
+          "name": "Railway",
           "color": "pink-text-gradient"
         }
       ]
@@ -149,15 +150,15 @@
       "image": "/images/Bookclub.png",
       "tags": [
         {
-          "name": "react",
+          "name": "NextJS",
           "color": "blue-text-gradient"
         },
         {
-          "name": "mongodb",
+          "name": "Tailwind CSS",
           "color": "green-text-gradient"
         },
         {
-          "name": "tailwind",
+          "name": "Vercel",
           "color": "pink-text-gradient"
         }
       ]
@@ -170,15 +171,15 @@
       "image": "/images/LITracker.png",
       "tags": [
         {
-          "name": "react",
+          "name": "NextJS",
           "color": "blue-text-gradient"
         },
         {
-          "name": "mongodb",
+          "name": "Tailwind CSS",
           "color": "green-text-gradient"
         },
         {
-          "name": "tailwind",
+          "name": "ECharts",
           "color": "pink-text-gradient"
         }
       ]
