@@ -35,7 +35,12 @@ export function FrontendShapes({ isHover, isPress, mouseX, mouseY }: any) {
   const lightRotateY = useSmoothTransform(mouseX, spring, mouseToLightRotation);
 
   return (
-    <Canvas shadows dpr={[1, 2]} resize={{ scroll: false, offsetSize: true }}>
+    <Canvas
+      shadows
+      dpr={[1, 2]}
+      resize={{ scroll: false, offsetSize: true }}
+      className="h-full w-screen overflow-hidden"
+    >
       <Camera mouseX={mouseX} mouseY={mouseY} />
       <MotionConfig transition={transition}>
         <motion.group rotation={[lightRotateX, lightRotateY, 0]}>

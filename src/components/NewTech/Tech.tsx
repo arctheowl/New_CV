@@ -2,7 +2,7 @@ import { SectionWrapper } from "~/hoc";
 import NewTech from "./NewTech";
 
 export const Tech = () => (
-  <div className="mx-12 -mt-32 overflow-visible pb-16 md:mx-32 md:flex">
+  <div className="mx-auto -mt-32 flex w-1/2 flex-col overflow-visible pb-16 md:mx-32 md:w-full md:flex-row">
     <NewTech title="Frontend" />
     <NewTech title="Backend" />
   </div>
