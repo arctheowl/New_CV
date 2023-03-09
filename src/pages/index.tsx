@@ -21,7 +21,9 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <div className={`h-screen w-screen to-[#030714]`}>
+      <div
+        className={`h-screen w-screen overflow-hidden overflow-y-auto to-[#030714]`}
+      >
         <div
           className={`mx-auto w-full md:-z-10 ${
             open
