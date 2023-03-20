@@ -61,7 +61,7 @@ const Tech = () => {
         </motion.p>
       </div>
 
-      <div className=" flex flex-wrap justify-around md:mt-20">
+      <div className=" grid grid-cols-2 md:mt-20 md:flex md:flex-wrap md:justify-around">
         {data.FrontendTech.map((project, index) => (
           <TechCard key={`project-${index}`} index={index} {...project} />
         ))}

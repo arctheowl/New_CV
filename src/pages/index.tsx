@@ -25,10 +25,8 @@ const Home: NextPage = () => {
         className={`h-screen w-screen overflow-hidden overflow-y-auto to-[#030714]`}
       >
         <div
-          className={`mx-auto w-full md:-z-10 bg-[url('/images/herobg.png')] h-screen bg-cover bg-center bg-no-repeat${
-            open
-              ? ""
-              : "bg-white"
+          className={`mx-auto w-full bg-[url('/images/herobg.png')] bg-cover bg-center md:-z-10 md:h-screen bg-no-repeat${
+            open ? "" : "bg-white"
           }`}
         >
           <ClickArrow open={open} />

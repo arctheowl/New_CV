@@ -37,7 +37,7 @@ const About = () => {
           chess, active member in a monthly bookclub and keep up to date with
           interesting technical projects.
         </motion.p>
-        <div className="mx-auto mt-20 flex flex-wrap gap-10">
+        <div className="mx-auto flex flex-wrap gap-4 md:mt-20 md:gap-10 ">
           {ServiceCardList.map((service, index) => (
             <ServiceCard
               key={service.index}
@@ -78,7 +78,7 @@ export const ServiceCard = ({ index, title, icon }: any) => {
         scale: 1,
         speed: 450,
       }}
-      className="w-[10rem] rounded-2xl p-5 md:w-[20rem] "
+      className="w-[10rem] rounded-2xl md:w-[20rem] md:p-5 "
     >
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
