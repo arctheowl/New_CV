@@ -30,10 +30,11 @@ const About = () => {
         >
           I'm a skilled full stack software developer with experience in
           TypeScript, Go, and Python. On the frontend I have sepecific expertise
-          in frameworks like Nextjs and Three.js. I'm a quick learner and
+          in frameworks like Nextjs and Astro. I'm a quick learner and
           collaborate closely with clients to create efficient, scalable, and
           user-friendly solutions that solve real-world problems. Let's work
-          together to bring your ideas to life!
+          together to bring your ideas to life! In my personal life I play chess, active member 
+          in a monthly bookclub and keep up to date with interesting technical projects.
         </motion.p>
         {/* <div className="mx-auto mt-20 flex flex-wrap gap-10">
           {ServiceCardList.map((service, index) => (
