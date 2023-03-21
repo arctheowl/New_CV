@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, image, tags }: any) => {
+const ProjectCard = ({ index, name, description, tags, image, link }: any) => {
   return (
     <Tilt
       options={{
@@ -13,11 +13,12 @@ const ProjectCard = ({ index, name, description, image, tags }: any) => {
         scale: 1,
         speed: 450,
       }}
-      className="md:w-[24rem]"
+      className="min-h-[280px] rounded-2xl p-5 sm:w-[360px] md:w-[25rem]"
     >
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        className="green-pink-gradient shadow-card' h-full w-full rounded-[20px] p-[1px] md:min-h-[280px]"
+        className="green-pink-gradient shadow-card' h-full min-h-[280px] w-full rounded-[20px] p-[1px]"
+        onClick={() => window.open(link, "_blank")}
       >
         <div className="flex h-full min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-[#030714] py-2 ">
           <div className="relative h-[230px] w-full">
@@ -49,18 +50,18 @@ const ProjectCard = ({ index, name, description, image, tags }: any) => {
   );
 };
 
-const Projects = () => {
+const Works = () => {
   return (
-    <div className="-mt-24 py-10 md:-mt-0">
+    <>
       <motion.div variants={textVariant(0.1)}>
         <p className={`${styles.sectionSubText} text-center`}>My work</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
       </motion.div>
 
-      <div className="flex w-full text-center">
+      <div className="absolute md:flex md:w-full md:text-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mx-auto mt-3 text-center text-[17px] leading-[30px] md:w-1/2"
+          className="text-secondary mx-auto mt-3 max-w-3xl text-center text-[17px] leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -70,13 +71,13 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <div className="flex flex-col gap-10 pt-10 md:mt-20 md:flex-row md:flex-wrap md:justify-around md:pt-0">
+      <div className="md:mt-20 md:flex md:flex-wrap md:justify-around">
         {data.projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
-export default SectionWrapper(Projects, "Projects");
+export default SectionWrapper(Works, "");

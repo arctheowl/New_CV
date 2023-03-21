@@ -37,7 +37,7 @@ const About = () => {
           chess, active member in a monthly bookclub and keep up to date with
           interesting technical projects.
         </motion.p>
-        <div className="mx-auto flex flex-wrap gap-4 pt-10 md:mt-20 md:gap-10 md:pt-0">
+        <div className="flex flex-wrap justify-center gap-4 pt-10 md:mt-20 md:gap-10 md:pt-0">
           {ServiceCardList.map((service, index) => (
             <ServiceCard
               key={service.index}

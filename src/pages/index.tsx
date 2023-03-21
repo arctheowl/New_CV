@@ -22,24 +22,24 @@ const Home: NextPage = () => {
       </Head>
 
       <div
-        className={`h-screen w-screen overflow-hidden overflow-y-auto to-[#030714]`}
+        className={`h-screen w-screen overflow-hidden overflow-y-auto bg-[#030714]`}
       >
         <div
-          className={`mx-auto h-full w-full bg-[url('/images/herobg.png')] bg-cover bg-center md:-z-10 md:h-screen bg-no-repeat${
+          className={`h-full bg-[url('/images/herobg.png')] bg-cover bg-center md:-z-10 md:h-screen bg-no-repeat${
             open ? "" : "bg-white"
           }`}
         >
           <ClickArrow open={open} />
-          <Laptop open={open} setOpen={setOpen} />
+          <div className="mx-auto h-4/6 pt-24">
+            <Laptop open={open} setOpen={setOpen} />
+          </div>
         </div>
         {open ? (
           <div className="flex flex-col">
             <About />
             <Tech />
             <Experience />
-            <div>
-              <Projects />
-            </div>
+            <Projects />
           </div>
         ) : null}
       </div>
