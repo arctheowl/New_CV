@@ -95,9 +95,7 @@ export default function Laptop({
   const props = useSpring({ open: Number(open) });
 
   return (
-    <div
-      className={`mx-auto my-auto flex h-1/2 flex-col md:mx-0 md:h-full md:w-full`}
-    >
+    <div className={`flex h-full flex-col md:mx-0 md:h-full md:w-full`}>
       <Canvas dpr={[0, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <Suspense fallback={null}>
           <group

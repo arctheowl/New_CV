@@ -18,7 +18,7 @@ const About = () => {
   };
 
   return (
-    <div className="px-2 pb-20 text-white" id="about">
+    <div className="-mt-24 px-2 pb-20 text-white md:-mt-0" id="about">
       <div className="flex flex-col text-center">
         <motion.div variants={textVariant(0.1)}>
           <h1 className={styles.sectionHeadText}>About Me</h1>
@@ -37,7 +37,7 @@ const About = () => {
           chess, active member in a monthly bookclub and keep up to date with
           interesting technical projects.
         </motion.p>
-        <div className="mx-auto flex flex-wrap gap-4 md:mt-20 md:gap-10 ">
+        <div className="mx-auto flex flex-wrap gap-4 pt-10 md:mt-20 md:gap-10 md:pt-0">
           {ServiceCardList.map((service, index) => (
             <ServiceCard
               key={service.index}

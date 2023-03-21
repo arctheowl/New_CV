@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         className={`h-screen w-screen overflow-hidden overflow-y-auto to-[#030714]`}
       >
         <div
-          className={`mx-auto w-full bg-[url('/images/herobg.png')] bg-cover bg-center md:-z-10 md:h-screen bg-no-repeat${
+          className={`mx-auto h-full w-full bg-[url('/images/herobg.png')] bg-cover bg-center md:-z-10 md:h-screen bg-no-repeat${
             open ? "" : "bg-white"
           }`}
         >
@@ -35,12 +35,11 @@ const Home: NextPage = () => {
         {open ? (
           <div className="flex flex-col">
             <About />
-            {/* <Suspense fallback={null}>
-              
-            </Suspense> */}
             <Tech />
             <Experience />
-            <Projects />
+            <div>
+              <Projects />
+            </div>
           </div>
         ) : null}
       </div>

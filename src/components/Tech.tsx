@@ -39,7 +39,7 @@ const TechCard = ({ index, name, icon, link }: any) => {
 
 const Tech = () => {
   return (
-    <>
+    <div className=" -mt-24 md:-mt-0">
       <motion.div variants={textVariant(0.1)}>
         <p className={`${styles.sectionSubText} text-center`}>What I Use</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
@@ -69,7 +69,7 @@ const Tech = () => {
           <TechCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
