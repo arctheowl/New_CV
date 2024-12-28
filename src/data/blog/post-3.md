@@ -1,12 +1,12 @@
 ---
-title: "Hello, World"
+title: "WIP"
 description: "this is a post example"
-pubDate: 2023-01-21
+pubDate: 2024-01-21
 category: "intro"
 draft: false
 ---
 
-# Hi there!
+# WIP
 
 This Markdown file creates a page at `your-domain.com/blog/post1/`
 
